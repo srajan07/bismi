@@ -1,0 +1,46 @@
+/* Reviews Section */
+.reviews-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Reviews List (Flex container) */
+  .reviews-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow reviews to wrap if necessary */
+    justify-content: center; /* Center the reviews horizontally */
+    gap: 20px; /* Add space between review cards */
+  }
+  
+  /* Individual Review Card */
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Adjust the width to display 3 cards in a row */
+    max-width: 600px;
+    box-sizing: border-box; /* Ensure padding and margin don't overflow */
+  }
+  
+  /* Review Title */
+  .review-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Review Text */
+  .review-card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Responsive Design (for smaller screens) */
+  @media (max-width: 768px) {
+    .review-card {
+      width: 100%; /* Stack reviews on small screens */
+    }
+  }
+  

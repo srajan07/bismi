@@ -1,0 +1,94 @@
+#menu {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #ddd;  /* Add a subtle border to the card */
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;  /* Slight background change on hover */
+  }
+  
+  .menu-item img {
+    width: 100%; /* Ensures image takes full width of the card */
+    height: 220px; /* Fixed height to maintain consistent image sizing */
+    border-radius: 8px; /* Rounded corners for a clean look */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    object-position: center; /* Centers the image within the box */
+    transition: transform 0.3s ease; /* Smooth zoom-in effect on hover */
+  }
+  
+  /* Optional: add zoom effect on hover */
+  .menu-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .dish-info {
+    margin-top: 15px;
+  }
+  
+  .dish-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px; /* Add space below the dish name */
+    font-weight: 600; /* Make the dish name bold */
+  }
+  
+  .dish-info p {
+    font-size: 1rem;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .dish-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f39c12;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .dish-info span:hover {
+    color: #ff7e5f; /* Change color on hover for price */
+    cursor: pointer; /* Make price clickable */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .menu-items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

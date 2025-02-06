@@ -1,0 +1,177 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering and Spacing */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Form Styling */
+.add-booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.add-booking-form input {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.add-booking-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button */
+.add-booking-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.add-booking-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Form */
+@media (max-width: 600px) {
+  .add-booking-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .add-booking-form button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Table Styling */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Scrollable table */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th, td {
+  padding: 8px;
+  font-size: 14px;
+}
+
+th {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+
+/* Button Styling */
+button {
+  padding: 8px 12px;
+  margin-right: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+/* Status Buttons */
+.confirm-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Logout Button */
+.logout-btn {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Make Logout Button More Responsive */
+@media (max-width: 768px) {
+  .logout-btn {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+}

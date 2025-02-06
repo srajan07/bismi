@@ -1,0 +1,55 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* White background for the header */
+    z-index: 1000; /* Ensures the header stays on top of other elements */
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for visual effect */
+    padding: 10px 20px; /* Padding for spacing inside the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease; /* Smooth transition for when the header changes */
+  }
+  
+  nav {
+    display: flex;
+    gap: 15px; /* Space between the links */
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav a:hover {
+   color: #f39c12;
+   
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #f39c12; /* Maintains the color of the 'Restaurant' part of the logo */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      gap: 10px;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  }
+
+
+  

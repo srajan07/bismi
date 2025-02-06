@@ -1,0 +1,92 @@
+/* Welcome Section */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url('/new.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: black;
+  height: 100vh;
+  background-attachment: fixed; /* Keeps the background fixed when scrolling */
+  position: relative;
+}
+
+/* Overlay to darken the background behind text */
+.welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Black with 40% transparency */
+  z-index: -1; /* Place overlay behind text */
+  filter: blur(5px);
+}
+
+/* Text Content */
+.welcome .text-content {
+  margin-bottom: 20px;
+  max-width: 800px;
+  z-index: 1; /* Ensures text stays above the overlay */
+}
+
+.welcome h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Darker text shadow */
+}
+
+.welcome p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #f7f7f7;
+  margin: 0 auto;
+  max-width: 750px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Darker text shadow for better contrast */
+}
+
+/* Explore Button */
+.explore-btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #ff7e5f; /* Matching color for hover effect */
+  transform: scale(1.05);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller devices */
+  }
+
+  .welcome .text-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .explore-btn {
+    width: 100%;
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+}

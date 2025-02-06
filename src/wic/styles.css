@@ -1,0 +1,279 @@
+/* styles.css (inside src/wic) */
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+/* Menu Section */
+.menu {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.menu ul li span {
+    color: #f39c12;
+}
+
+/* Booking Section */
+#booking {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#booking h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#booking p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* About Section */
+#about {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-info a {
+    display: block;
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e67e22;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 20px;
+    }
+
+    .menu ul li {
+        font-size: 18px;
+    }
+
+    #booking, #about {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .welcome .text-content h2 {
+        font-size: 28px;
+    }
+
+    .menu ul li {
+        font-size: 16px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+}
+/* Contact Info in Footer */
+footer .contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+footer .contact-info a {
+    display: block;
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+footer .contact-info a:hover {
+    color: #e67e22;
+}
+
+footer .contact-info p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Copyright styles */
+footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #bbb;
+}
+
+footer .copyright p {
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Optional hover effect for copyright text */
+footer .copyright p:hover {
+    color: #f39c12;
+    transition: color 0.3s ease;
+}
+
+/* status checking */
+/* Style for the status page container */
+#status-page {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  #status-page h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #status-page p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4CAF50; /* Green focus color */
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #388e3c;
+  }
+  
+  /* Status message style */
+  #status-page p:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+   
+  }
+  
+  #status-page p:last-child::before {
+    content: "Booking Status: ";
+    font-weight: normal;
+    color: #777;
+  }
+  
+  
